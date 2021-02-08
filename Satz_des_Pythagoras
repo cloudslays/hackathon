@@ -1,0 +1,13 @@
+import math
+
+x = input('Was wird gesucht? Hypotenuse(H) oder Kathete(K)')
+if x == "H":
+    a = int(input('Welchen Wert hat "a"?.'))
+    b = int(input('Welchen Wert hat "b"?'))
+    c = math.sqrt(a**2 + b**2)
+    print('Die gesuchte Hypotenuse lautet', c)
+if x == "K":
+    ab = int(input('Welchen Wert hat "a/b"?.'))
+    c = int(input('Welchen Wert hat "c"?'))
+    ba = math.sqrt(c**2-a**2)
+    print('Die gesuchte Kathete lautet', ba)
